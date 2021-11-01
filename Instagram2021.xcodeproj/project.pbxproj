@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		131176675236F5D3A8668D86 /* Pods_Instagram2021_Instagram2021UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8CCABD5CEB92930286D7763 /* Pods_Instagram2021_Instagram2021UITests.framework */; };
 		C363FC9CEEA90F56B7CB429E /* Pods_Instagram2021Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321E9E1F8A5C333964A6864 /* Pods_Instagram2021Tests.framework */; };
+		C74D88F4272F8DB900F62B63 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D88F3272F8DB900F62B63 /* PostCell.swift */; };
+		C78BA3C227306F4C00C73969 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78BA3C127306F4C00C73969 /* FeedViewController.swift */; };
+		C7D999C2272DB08B00A887A1 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D999C1272DB08B00A887A1 /* CameraViewController.swift */; };
 		C7DEFA54271FEB53007D6354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DEFA53271FEB53007D6354 /* AppDelegate.swift */; };
 		C7DEFA56271FEB53007D6354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DEFA55271FEB53007D6354 /* SceneDelegate.swift */; };
-		C7DEFA58271FEB53007D6354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DEFA57271FEB53007D6354 /* ViewController.swift */; };
 		C7DEFA5B271FEB53007D6354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DEFA59271FEB53007D6354 /* Main.storyboard */; };
 		C7DEFA5D271FEB55007D6354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DEFA5C271FEB55007D6354 /* Assets.xcassets */; };
 		C7DEFA60271FEB55007D6354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DEFA5E271FEB55007D6354 /* LaunchScreen.storyboard */; };
@@ -46,10 +48,12 @@
 		3537900CC896E26EC830652D /* Pods-Instagram2021Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram2021Tests.debug.xcconfig"; path = "Target Support Files/Pods-Instagram2021Tests/Pods-Instagram2021Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5321E9E1F8A5C333964A6864 /* Pods_Instagram2021Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram2021Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CCABD5CEB92930286D7763 /* Pods_Instagram2021_Instagram2021UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram2021_Instagram2021UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74D88F3272F8DB900F62B63 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		C78BA3C127306F4C00C73969 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C7D999C1272DB08B00A887A1 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		C7DEFA50271FEB53007D6354 /* Instagram2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DEFA53271FEB53007D6354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7DEFA55271FEB53007D6354 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7DEFA57271FEB53007D6354 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7DEFA5A271FEB53007D6354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7DEFA5C271FEB55007D6354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7DEFA5F271FEB55007D6354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -133,12 +137,14 @@
 			children = (
 				C7DEFA53271FEB53007D6354 /* AppDelegate.swift */,
 				C7DEFA55271FEB53007D6354 /* SceneDelegate.swift */,
-				C7DEFA57271FEB53007D6354 /* ViewController.swift */,
 				C7DEFA59271FEB53007D6354 /* Main.storyboard */,
 				C7DEFA5C271FEB55007D6354 /* Assets.xcassets */,
 				C7DEFA5E271FEB55007D6354 /* LaunchScreen.storyboard */,
 				C7DEFA61271FEB55007D6354 /* Info.plist */,
 				C7DEFA83271FF03E007D6354 /* LoginViewController.swift */,
+				C78BA3C127306F4C00C73969 /* FeedViewController.swift */,
+				C7D999C1272DB08B00A887A1 /* CameraViewController.swift */,
+				C74D88F3272F8DB900F62B63 /* PostCell.swift */,
 			);
 			path = Instagram2021;
 			sourceTree = "<group>";
@@ -410,9 +416,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7DEFA84271FF03E007D6354 /* LoginViewController.swift in Sources */,
-				C7DEFA58271FEB53007D6354 /* ViewController.swift in Sources */,
+				C7D999C2272DB08B00A887A1 /* CameraViewController.swift in Sources */,
 				C7DEFA54271FEB53007D6354 /* AppDelegate.swift in Sources */,
 				C7DEFA56271FEB53007D6354 /* SceneDelegate.swift in Sources */,
+				C74D88F4272F8DB900F62B63 /* PostCell.swift in Sources */,
+				C78BA3C227306F4C00C73969 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +608,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -629,6 +638,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

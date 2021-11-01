@@ -7,6 +7,7 @@ target 'Instagram2021' do
 
   # Pods for Instagram2021
   pod 'Parse'
+  pod 'Alamofire' 
   pod 'AlamofireImage'
 
   target 'Instagram2021Tests' do
