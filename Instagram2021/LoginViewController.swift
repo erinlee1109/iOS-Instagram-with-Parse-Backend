@@ -19,9 +19,9 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        usernameField.layer.borderWidth = 1;
-        usernameField.layer.borderColor = UIColor.red.cgColor;
-        usernameField.layer.cornerRadius = 8.0;
+//        usernameField.layer.borderWidth = 1;
+//        usernameField.layer.borderColor = UIColor.red.cgColor;
+//        usernameField.layer.cornerRadius = 8.0;
     }
     
     @IBAction func onSignIn(_ sender: Any) {
