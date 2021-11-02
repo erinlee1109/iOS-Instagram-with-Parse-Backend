@@ -50,8 +50,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let post = posts[indexPath.row]
         let user = post["user"] as! PFUser
         
+        cell.usernameTop.font = UIFont.boldSystemFont(ofSize: 16.0); // bold the username
         cell.usernameTop.text = user.username
+        
+        cell.usernameBottom.font = UIFont.boldSystemFont(ofSize: 16.0);
         cell.usernameBottom.text = user.username
+        
         cell.caption.text = (post["caption"] as! String)
         
         let imageFile = post["image"] as! PFFileObject

@@ -17,6 +17,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let navAppearnce = UINavigationBar.appearance()
+        navAppearnce.barTintColor = UIColor(red: 156.0/255.0, green: 175.0/255.0, blue: 136.0/255.0, alpha: 1.0) // nav bar color is ~sage~
+        navAppearnce.backgroundColor = UIColor(red: 156.0/255.0, green: 175.0/255.0, blue: 136.0/255.0, alpha: 1.0)
+        navAppearnce.tintColor = UIColor.white // vector(?) logos will appear white, instead of system blue
+        navAppearnce.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white] // view controller title will appear white
+        
+        
+        // set global label, textField, and button font to SFMono
+        let labelAppearance = UILabel.appearance()
+        labelAppearance.font = UIFont.init(name: "SFMono", size: 16.0)
+
+        let textFieldAppearance = UITextView.appearance()
+        textFieldAppearance.font = UIFont.init(name: "SFMono", size: 16.0)
+                
+        let buttonAppearance = UIButton.appearance().titleLabel
+        buttonAppearance?.font = UIFont.init(name: "SFMono", size: 16.0)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

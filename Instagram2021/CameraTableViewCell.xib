@@ -17,32 +17,46 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kek-MX-why">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="375" id="Abi-TF-mqF"/>
-                            <constraint firstAttribute="width" constant="375" id="H9b-sP-h9z"/>
-                        </constraints>
-                    </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYf-IX-qiJ">
                         <rect key="frame" x="83.5" y="391" width="208.5" height="32"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="Choose from Photo Library..."/>
+                        <connections>
+                            <action selector="onLibraryButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RUE-sg-JmB"/>
+                        </connections>
                     </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xYW-5q-CWh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="375" id="9Ff-90-EGZ"/>
+                            <constraint firstAttribute="height" constant="375" id="etj-oP-TTP"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kBj-cn-6lI" appends="YES" id="sUu-gF-89L"/>
+                        </connections>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="xYW-5q-CWh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Bz-TD-qKt"/>
+                    <constraint firstItem="xYW-5q-CWh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2ED-eq-ybt"/>
                     <constraint firstItem="EYf-IX-qiJ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="DTc-HX-iBU"/>
-                    <constraint firstAttribute="trailing" secondItem="kek-MX-why" secondAttribute="trailing" id="NVv-eT-Lfz"/>
-                    <constraint firstItem="EYf-IX-qiJ" firstAttribute="top" secondItem="kek-MX-why" secondAttribute="bottom" constant="16" id="Th3-eM-Dfk"/>
-                    <constraint firstItem="kek-MX-why" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Txu-nX-rG8"/>
+                    <constraint firstItem="EYf-IX-qiJ" firstAttribute="top" secondItem="xYW-5q-CWh" secondAttribute="bottom" constant="16" id="FeG-JU-1K2"/>
+                    <constraint firstAttribute="trailing" secondItem="xYW-5q-CWh" secondAttribute="trailing" id="Rln-7u-jQD"/>
                     <constraint firstAttribute="bottomMargin" secondItem="EYf-IX-qiJ" secondAttribute="bottom" constant="16" id="i0d-mJ-sHu"/>
-                    <constraint firstItem="kek-MX-why" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ixi-CX-35V"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="openCamera" destination="xYW-5q-CWh" id="6es-ZJ-71N"/>
+            </connections>
             <point key="canvasLocation" x="177.536231884058" y="245.08928571428569"/>
         </tableViewCell>
+        <tapGestureRecognizer id="kBj-cn-6lI">
+            <connections>
+                <action selector="onCameraButton:" destination="KGk-i7-Jjw" id="5M4-76-VGw"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="image_placeholder" width="375" height="375"/>
